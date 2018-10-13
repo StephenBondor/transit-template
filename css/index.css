@@ -17,6 +17,7 @@ body {
   padding: 8rem 3rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  line-height: 1.5;
 }
 .container {
   width: 100%;
@@ -24,6 +25,20 @@ body {
   margin: 0 auto;
   background-color: white;
   border-radius: 5px;
+}
+.secondary-heading {
+  font-size: 2.5rem;
+  color: #ee6787;
+  margin-bottom: 2rem;
+}
+.text {
+  margin: 2rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+i {
+  color: #ee6787;
 }
 .header {
   padding: 2rem 3rem;
@@ -99,4 +114,39 @@ body {
 }
 .cta__button:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+.features {
+  padding: 8rem 5rem;
+  text-align: center;
+}
+.features__boxes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.features__boxes.features__boxes::after {
+  content: '';
+  width: 80%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: 5rem;
+}
+.features__box {
+  z-index: 3;
+  background-color: white;
+}
+.features__box:not(:last-child) {
+  margin-right: 8%;
+}
+.features__box-icon {
+  font-size: 4rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  margin-bottom: 2rem;
 }
